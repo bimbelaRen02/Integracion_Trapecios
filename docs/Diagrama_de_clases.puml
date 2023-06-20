@@ -1,0 +1,18 @@
+@startuml IntegracionTrapecios
+class TrapeciosIntegracion {
+    - a
+    - b
+    - n
+    +calcularFuncion()
+    +calcularIntegral()
+}
+
+class main {
+    - resultado
+    - a
+    - b
+    - n
+}
+
+main "1" o-- "1" TrapeciosIntegracion
+@enduml
